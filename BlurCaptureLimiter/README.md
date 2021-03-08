@@ -21,11 +21,11 @@ path_to_firecapture/plugins/x86/BlurCaptureLimiter/BlurCaptureLimiter.jar
 
 The *BlurCaptureLimiter* plugin has a slider control with which you set the blur capture limit. Assuming you have centered and focused your planet, the following would be a good recording procedure to use the plugin:
 
-1. Configure the frame recording (ROI, gain, exposure time, ...)
-2. Start the BlurCaptureLimiter plugin
-3. Let the plugin observe the frame stream for a few minutes and observe the blur measure values for the current seeing conditions
-4. Set the threshold close to the best seeing limit, say at 0.95
-5. Start the recording (with a given time or frame number limit), only frames above the measure are recorded
+1. Configure the frame recording (ROI, gain, exposure time, ...).
+2. Start the BlurCaptureLimiter plugin.
+3. Let the plugin observe the frame stream for a few minutes and observe the blur measure values for the current seeing conditions.
+4. Set the threshold close to the best seeing limit, say at 0.95.
+5. Start the recording (with a given time or frame number limit). Only frames above that relative sharpness are recorded.
 
 The output field labelled *Current (each 100th frame)* displays the estimated sharpness measure for each 100th frame in the frame stream. This is done so that you still can observe the estimated sharpness value even for very high frame rates. However the capturing limiter operates on each and every frame in the stream.
 
